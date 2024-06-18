@@ -4,7 +4,23 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="DialogHostDemo.Views.DialogDemoContentView">
-    <Grid Margin="0">
-        <Label>This is the dialog content.</Label>
+    <Grid Margin="0" RowDefinitions="40,*">
+        <Grid Grid.Row="0" ColumnDefinitions="100, *, 100">
+            <Button Grid.Column="0" HorizontalAlignment="Stretch">Button Left</Button>
+            <Button Grid.Column="1" HorizontalAlignment="Stretch">Button Middle</Button>
+            <Button Grid.Column="2" HorizontalAlignment="Stretch">Button Right</Button>
+        </Grid>
+        <DataGrid Grid.Row="1">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Column 1" Width="200" />
+                <DataGridTextColumn Header="Column 2" Width="200" />
+                <DataGridTextColumn Header="Column 3" Width="200" />
+                <DataGridTextColumn Header="Column 4" Width="200" />
+                <DataGridTextColumn Header="Column 5" Width="200" />
+                <DataGridTextColumn Header="Column 6" Width="200" />
+                <DataGridTextColumn Header="Column 7" Width="200" />
+                <DataGridTextColumn Header="Column 8" Width="200" />
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </UserControl>
