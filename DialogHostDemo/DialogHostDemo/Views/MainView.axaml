@@ -24,9 +24,10 @@
         Name="MainViewDialogHost"
         CloseOnClickAway="True"
         DisableOpeningAnimation="True"
-        OverlayBackground="Black" DialogMargin="20">
+        OverlayBackground="Black">
         <dialogHostAvalonia:DialogHost.PopupPositioner>
-            <positioners:AlignmentDialogPopupPositioner HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="16"/>
+            <positioners:AlignmentDialogPopupPositioner HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                                                        Margin="32"/>
         </dialogHostAvalonia:DialogHost.PopupPositioner>
         <dialogHostAvalonia:DialogHost.DialogContent>
             <!-- put your dialog content here-->
